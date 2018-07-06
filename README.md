@@ -35,6 +35,8 @@ Sample:
 		2018-06|1.32|1.41|1.50|1.43|1.56|1.58|
 		Trend|up|up|-|up|up|down|
 
+(Note: Figures are in percentage %)
+
 ## Design Issues
 
 1. As the requirement assumes the program to be run via command line with parameters, we choose to use javascript and trigger by Node.js. There is no GUI provided to users.
