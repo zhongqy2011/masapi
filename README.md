@@ -1,14 +1,16 @@
 # mas_api.js
 
-This is a client javascript program to consume the rate info from one MAS API. It allows user to get the fixed deposit/saving deposit rate info of Banks and Financial Companies from MAS API and do comparation and the up/down trend within the specific period.
+This is a client javascript program to consume the rate info from one MAS API. It allows user to get the fixed deposit/saving deposit rate info of Banks and Financial Companies from MAS API and do comparation and the up/down trend within the specific period. 
 
 ## Functionality
 
 1. To display the financial companies rates against bank rates by months within the period provided.
 2. To display the overall average of financial companies rates against bank rates within the period provided.
 3. To display interest rates slope are on an upward or downward trend within the period provided.
-4. Assumption
-
+4. Assumptions:
+- NULL value returned from the source will be treated as zero.
+- There is no structure or interface change/downtime with the MAS API since this release. 
+- The trend generated is based on the start and end date. This can be enhenced to track month by month.
 
 ## Installation
 
@@ -33,25 +35,16 @@ Sample:
 		2018-06|1.32|1.41|1.50|1.43|1.56|1.58|
 		Trend|up|up|-|up|up|down|
 
-## Contributing
+## Design Issues
 
-1. Fork it!
-2. Create your feature branch: `git checkout -b my-new-feature`
-3. Commit your changes: `git commit -am 'Add some feature'`
-4. Push to the branch: `git push origin my-new-feature`
-5. Submit a pull request :D
+1. As the requirement assumes the program to be run via command line with parameters, we choose to use javascript and trigger by Node.js. There is no GUI provided to users.
+2. Some common functions has been developed as below which can be reused in future.
+- function yearValidation(year) - this is to validate the year input is in format "9999" and with range 1980 to current year.
+- function dateconversion(vdate) - this is to convert date format from MMM-YYYY to YYYY-MM.
+- function pad(num, size) - this is to add prefix "0" to a number base on the size.
+3. Due to development environment/time constraint, there could be bug(s) within the source code. Appreciate your kind feedback on the issue found and possible solutions. 
 
-## History
+## Additional Notes
 
-TODO: Write history
-
-## Credits
-
-TODO: Write credits
-
-## License
-
-TODO: Write license
-]]></content>
-  <tabTrigger>readme</tabTrigger>
-</snippet>
+- Figures from MAS API refer to average rates compiled from that quoted by 10 leading banks and finance companies.
+- Figures provided by MAS API is since 1983 onwards.
