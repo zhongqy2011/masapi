@@ -1,6 +1,5 @@
-<snippet>
-  <content><![CDATA[
-# ${1:mas_api.js}
+# mas_api.js
+
 This is a client javascript program to consume the rate info from one MAS API. It allows user to get the fixed deposit/saving deposit rate info of Banks and Financial Companies from MAS API and do comparation and the up/down trend within the specific period.
 
 ## Functionality
@@ -8,6 +7,8 @@ This is a client javascript program to consume the rate info from one MAS API. I
 1. To display the financial companies rates against bank rates by months within the period provided.
 2. To display the overall average of financial companies rates against bank rates within the period provided.
 3. To display interest rates slope are on an upward or downward trend within the period provided.
+4. Assumption
+
 
 ## Installation
 
@@ -26,6 +27,7 @@ Sample:
 
 - Input: node mas_api.js FixedDeposits JAN-2018 JUN-2018 Months
 - Output:    end_of_month|banks_fixed_deposits_3m|banks_fixed_deposits_6m|banks_fixed_deposits_12m|fc_fixed_deposits_3m|fc_fixed_deposits_6m|fc_fixed_deposits_12m
+
 		2018-01|1.30|1.40|1.50|1.40|1.50|1.60|
 		.......
 		2018-06|1.32|1.41|1.50|1.43|1.56|1.58|
