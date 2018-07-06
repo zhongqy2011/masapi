@@ -44,6 +44,10 @@ Sample:
   - function pad(num, size) - this is to add prefix "0" to a number base on the size.
 3. Due to development environment/time constraint, there could be bug(s) within the source code. Appreciate your kind feedback on the issue found and possible solutions. 
 
+## Testing
+
+Unit test cases has been created and can be found in the file lists.
+
 ## Additional Notes
 
   - Figures from MAS API refer to average rates compiled from that quoted by 10 leading banks and finance companies.
