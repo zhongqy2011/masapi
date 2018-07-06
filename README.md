@@ -14,7 +14,7 @@ This is a client javascript program to consume the rate info from one MAS API. I
 
 ## Installation
 
-1. To run the javascript via command line with auguments, we use Node.js to trigger the js file. Hence Node.js is required to install in location PC. You can find the details <a REF='https://nodejs.org/en/'>here</a> for Node.js related info and installation package.
+1. To run the javascript via command line with auguments, we use Node.js to trigger the js file. Hence Node.js is required to install in location PC. You can find the details [here](https://nodejs.org/en/) for Node.js related info and installation package.
 2. Copy mas_api.js file to your location PC.
 
 ## Usage
@@ -48,3 +48,4 @@ Sample:
 
 - Figures from MAS API refer to average rates compiled from that quoted by 10 leading banks and finance companies.
 - Figures provided by MAS API is since 1983 onwards.
+- MAS API used for rate extraction in this program is [nterest Rates of Banks and Finance Companies, Monthly](https://secure.mas.gov.sg/api/APIDescPage.aspx?resource_id=5f2b18a8-0883-4769-a635-879c63d3caac)
