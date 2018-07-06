@@ -8,9 +8,9 @@ This is a client javascript program to consume the rate info from one MAS API. I
 2. To display the overall average of financial companies rates against bank rates within the period provided.
 3. To display interest rates slope are on an upward or downward trend within the period provided.
 4. Assumptions:
-- NULL value returned from the source will be treated as zero.
-- There is no structure or interface change/downtime with the MAS API since this release. 
-- The trend generated is based on the start and end date. This can be enhenced to track month by month.
+  - NULL value returned from the source will be treated as zero.
+  - There is no structure or interface change/downtime with the MAS API since this release. 
+  - The trend generated is based on the start and end date. This can be enhenced to track month by month.
 
 ## Installation
 
@@ -38,14 +38,14 @@ Sample:
 ## Design Issues
 
 1. As the requirement assumes the program to be run via command line with parameters, we choose to use javascript and trigger by Node.js. There is no GUI provided to users.
-2. Some common functions has been developed as below which can be reused in future.
-- function yearValidation(year) - this is to validate the year input is in format "9999" and with range 1980 to current year.
-- function dateconversion(vdate) - this is to convert date format from MMM-YYYY to YYYY-MM.
-- function pad(num, size) - this is to add prefix "0" to a number base on the size.
+2. Below are some common functions developed which can be reused in future.
+  - function yearValidation(year) - this is to validate the year input is in format "9999" and with range 1980 to current year.
+  - function dateconversion(vdate) - this is to convert date format from MMM-YYYY to YYYY-MM.
+  - function pad(num, size) - this is to add prefix "0" to a number base on the size.
 3. Due to development environment/time constraint, there could be bug(s) within the source code. Appreciate your kind feedback on the issue found and possible solutions. 
 
 ## Additional Notes
 
-- Figures from MAS API refer to average rates compiled from that quoted by 10 leading banks and finance companies.
-- Figures provided by MAS API is since 1983 onwards.
-- MAS API used for rate extraction in this program is [nterest Rates of Banks and Finance Companies, Monthly](https://secure.mas.gov.sg/api/APIDescPage.aspx?resource_id=5f2b18a8-0883-4769-a635-879c63d3caac)
+  - Figures from MAS API refer to average rates compiled from that quoted by 10 leading banks and finance companies.
+  - Figures provided by MAS API is since 1983 onwards.
+  - MAS API used for rate extraction in this program is [nterest Rates of Banks and Finance Companies, Monthly](https://secure.mas.gov.sg/api/APIDescPage.aspx?resource_id=5f2b18a8-0883-4769-a635-879c63d3caac)
