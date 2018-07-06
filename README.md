@@ -39,7 +39,7 @@ Sample:
 
 ## Design Issues
 
-1. As the requirement assumes the program to be run via command line with parameters, we choose to use javascript and trigger by Node.js. There is no GUI provided to users.
+1. As the requirement assumes the program to be run via command line with parameters, we choose to use javascript and trigger by Node.js. There is no GUI provided by the program.
 2. Below are some common functions developed which can be reused in future.
   - function yearValidation(year) - this is to validate the year input is in format "9999" and with range 1980 to current year.
   - function dateconversion(vdate) - this is to convert date format from MMM-YYYY to YYYY-MM.
